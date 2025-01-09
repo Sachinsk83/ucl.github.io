@@ -1,0 +1,30 @@
+#mod_rewrite on
+RewriteEngine on
+
+#Server Side lncludes (SSI)
+Options +Includes
+AddType text/html .shtml
+AddHandler server-parsed .shtml
+
+#Hotlinking Protection
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?uclaadhar.space/.*$ [NC]
+RewriteRule \.(js|css|jpg|gif|png|bmp|mp4|3gp|m4a|m4r|aac|mp3|ogg|wave)$ - [F]
+
+#PHP code in HTML file
+AddType fcgid-script .php .htm .html .phtml
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthUserFile /services/users/zfh5/palmuk//www/uclaadhar.space/_vti_pvt/service.pwd
+AuthGroupFile /services/users/zfh5/palmuk//www/uclaadhar.space/_vti_pvt/service.grp
