@@ -1,3 +1,0 @@
-E:
-CD E:\CRACK\OK
-XCOPY 2 E:\CRACK\2 /E /I
